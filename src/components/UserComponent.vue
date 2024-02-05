@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { user as userMock } from '@/assets/mock'
+import type { IUser } from '@/types/user';
 import { ref } from 'vue';
-const user = ref(userMock)
+import type { RouterLink } from 'vue-router';
+const user = ref<IUser>(userMock)
 </script>
 <template>
   <section class="h-[calc(100dvh-149.5px)] md:h-[calc(100vh-88px)] bg-section flex justify-center items-center p-4  ">
@@ -31,14 +33,14 @@ const user = ref(userMock)
         </div>
         <div class="flex justify-around gap-2 flex-1">
         </div>
-        <p class="stat flex-1" v-if="user.location">Location
-          <span aria-label="location">{{ user.location }}</span>
+        <p class="stat flex-1" v-if="user.location" aria-label="location">Location
+          <span>{{ user.location }}</span>
         </p>
       </div>
 
-      <router-link to="/repos"
+      <RouterLink to="/repos"
         class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md">View
-        Repositories</router-link>
+        Repositories</RouterLink>
 
     </div>
 
