@@ -10,7 +10,7 @@ const handleSubmit = () => {
 <template>
   <header class="flex flex-col bg-header py-4 gap-3 md:flex-row md:justify-between md:px-4">
     <div class="flex justify-center items-center gap-4 ">
-      <img src="@/assets/images/github-logo.svg" alt="GitHub Logo" class="w-12" />
+      <img src="@/assets/images/github-logo.svg" alt="GitHub Logo" class="w-12" aria-label="GitHub Logo" />
       <h1 class="font-serif font-bold text-xl text-gray-300 tracking-wide">GitHub Finder</h1>
     </div>
     <form class="flex items-stretch gap-3 px-3 py-2 md:flex-1 md:justify-end" autocomplete="off"
