@@ -2,7 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        header: '#1e1e1e',
+
+        // secondary color must be cyan
+        secondary: '#2699f2',
+      },
+    },
   },
   plugins: [],
 };

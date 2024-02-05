@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeaderComponent from '@/components/HeaderComponent.vue';
+</script>
 <template>
-  <h1>Home</h1>
+  <HeaderComponent />
 </template>
