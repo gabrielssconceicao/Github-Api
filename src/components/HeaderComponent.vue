@@ -18,7 +18,7 @@ const handleSubmit = () => {
       <input type="text" name="search" id="search" placeholder="Search GitHub users" aria-label="Search"
         class="flex-1 rounded-3xl px-3 py-2 font-mono font-medium tracking-wider  focus-visible:outline-none md:flex-1 md:max-w-[60%]"
         v-model="inputValue">
-      <button type="submit" class="p-2 w-9 h-9 rounded-full bg-secondary">
+      <button type="submit" class="p-2 w-9 h-9 rounded-full bg-primary">
         <img src="@/assets/images/search.svg" alt="Search image" />
       </button>
     </form>
