@@ -19,20 +19,20 @@ const props = defineProps<{ user: IUser }>()
           props.user.name }}
         </h2>
         <a class="font-mono font-semibold text-lg bg-primary-contrast flex items-center gap-2 p-1 rounded-md"
-          :href="props.user.html_url" target="_blank">
+          :href="props.user.html_url" target="_blank" aria-label="user-github-link">
           <img src="@/assets/images/github-logo.svg" alt="github-logo" class="w-6" aria-label="github-logo">
-          <span class="text-white" aria-label="github-url">{{ props.user.login }}</span></a>
-        <p v-if="props.user.bio" class="font-mono break-before-auto" aria-label="bio">{{ props.user.bio }}</p>
+          <span class="text-white" aria-label="user-github-name">{{ props.user.login }}</span></a>
+        <p v-if="props.user.bio" class="font-mono break-before-auto" aria-label="user-bio">{{ props.user.bio }}</p>
       </div>
 
       <div class="user-stats flex flex-col gap-3 w-[50%]">
         <div class="follows flex justify-around gap-2 flex-1">
-          <p class=" stat" aria-label="followers">Followers <span>{{ props.user.followers }}</span></p>
-          <p class="stat" aria-label="following">Following <span>{{ props.user.following }}</span></p>
+          <p class=" stat" aria-label="user-followers">Followers <span>{{ props.user.followers }}</span></p>
+          <p class="stat" aria-label="user-following">Following <span>{{ props.user.following }}</span></p>
         </div>
         <div class="flex justify-around gap-2 flex-1">
         </div>
-        <p class="stat flex-1" v-if="props.user.location" aria-label="location">Location
+        <p class="stat flex-1" v-if="props.user.location" aria-label="user-location">Location
           <span>{{ props.user.location }}</span>
         </p>
       </div>

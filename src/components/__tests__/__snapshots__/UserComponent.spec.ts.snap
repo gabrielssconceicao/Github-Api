@@ -1,0 +1,99 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<UserComponent /> > should match snapshot 1`] = `
+<section
+  class="h-[calc(100dvh-149.5px)] md:h-[calc(100vh-88px)] bg-section flex justify-center items-center p-4"
+>
+  <div
+    class="container max-w-[500px] flex flex-col items-center justify-between gap-3 bg-white p-3 rounded-lg shadow-md shadow-[#00000088] relative after:absolute after:h-2 after:w-full after:bottom-[0] after:rounded-b-lg after:bg-primary-contrast"
+  >
+    <div
+      class="flex flex-col items-center justify-between gap-3"
+      id="user-info
+      "
+    >
+      <img
+        alt="testeuser avatar"
+        aria-label="avatar"
+        class="rounded-full w-28 border-4 border-primary"
+        src="https://avatars.githubusercontent.com/u/10590076?v=4"
+      />
+      <h2
+        aria-label="user-name"
+        class="font-bold font-sans text-xl tracking-wider"
+      >
+        Teste User
+      </h2>
+      <a
+        aria-label="user-github-link"
+        class="font-mono font-semibold text-lg bg-primary-contrast flex items-center gap-2 p-1 rounded-md"
+        href="https://github.com/testeuser"
+        target="_blank"
+      >
+        <img
+          alt="github-logo"
+          aria-label="github-logo"
+          class="w-6"
+          src="/src/assets/images/github-logo.svg"
+        />
+        <span
+          aria-label="user-github-name"
+          class="text-white"
+        >
+          testeuser
+        </span>
+      </a>
+      <p
+        aria-label="user-bio"
+        class="font-mono break-before-auto"
+      >
+        lorem ipsum dolor sit amet
+      </p>
+    </div>
+    <div
+      class="user-stats flex flex-col gap-3 w-[50%]"
+    >
+      <div
+        class="follows flex justify-around gap-2 flex-1"
+      >
+        <p
+          aria-label="user-followers"
+          class="stat"
+        >
+          Followers 
+          <span>
+            0
+          </span>
+        </p>
+        <p
+          aria-label="user-following"
+          class="stat"
+        >
+          Following 
+          <span>
+            5
+          </span>
+        </p>
+      </div>
+      <div
+        class="flex justify-around gap-2 flex-1"
+      />
+      <p
+        aria-label="user-location"
+        class="stat flex-1"
+      >
+        Location 
+        <span>
+          Brazil
+        </span>
+      </p>
+    </div>
+    <routerlink
+      class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md"
+      to="/repos"
+    >
+      View Repositories
+    </routerlink>
+  </div>
+</section>
+`;
