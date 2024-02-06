@@ -1,7 +1,7 @@
-import { expect, it, describe } from 'vitest';
+import { expect, it, describe, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
 import HeaderComponentVue from '../HeaderComponent.vue';
-
+import { createPinia, setActivePinia } from 'pinia';
 describe('<HeaderComponent />', () => {
   it('should render header', () => {
     const wrapper = mount(HeaderComponentVue);

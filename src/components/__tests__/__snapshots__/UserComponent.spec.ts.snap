@@ -2,86 +2,82 @@
 
 exports[`<UserComponent /> > should match snapshot 1`] = `
 <section
-  class="h-[calc(100dvh-149.5px)] md:h-[calc(100vh-88px)] bg-section flex justify-center items-center p-4"
+  class="container max-w-[500px] flex flex-col items-center justify-between gap-3 bg-white p-3 rounded-lg shadow-md shadow-[#00000088] relative after:absolute after:h-2 after:w-full after:bottom-[0] after:rounded-b-lg after:bg-primary-contrast"
+  id="user-info
+      "
 >
   <div
-    class="container max-w-[500px] flex flex-col items-center justify-between gap-3 bg-white p-3 rounded-lg shadow-md shadow-[#00000088] relative after:absolute after:h-2 after:w-full after:bottom-[0] after:rounded-b-lg after:bg-primary-contrast"
+    class="flex flex-col items-center justify-between gap-3"
   >
-    <div
-      class="flex flex-col items-center justify-between gap-3"
-      id="user-info
-      "
+    <img
+      alt="testeuser avatar"
+      aria-label="avatar"
+      class="rounded-full w-28 border-4 border-primary"
+      src="https://avatars.githubusercontent.com/u/10590076?v=4"
+    />
+    <h2
+      aria-label="user-name"
+      class="font-bold font-sans text-xl tracking-wider"
+    >
+      Teste User
+    </h2>
+    <a
+      aria-label="user-github-link"
+      class="font-mono font-semibold text-lg bg-primary-contrast flex items-center gap-2 p-1 rounded-md"
+      href="https://github.com/testeuser"
+      target="_blank"
     >
       <img
-        alt="testeuser avatar"
-        aria-label="avatar"
-        class="rounded-full w-28 border-4 border-primary"
-        src="https://avatars.githubusercontent.com/u/10590076?v=4"
+        alt="github-logo"
+        aria-label="github-logo"
+        class="w-6"
+        src="/src/assets/images/github-logo.svg"
       />
-      <h2
-        aria-label="user-name"
-        class="font-bold font-sans text-xl tracking-wider"
+      <span
+        aria-label="user-github-name"
+        class="text-white"
       >
-        Teste User
-      </h2>
-      <a
-        aria-label="user-github-link"
-        class="font-mono font-semibold text-lg bg-primary-contrast flex items-center gap-2 p-1 rounded-md"
-        href="https://github.com/testeuser"
-        target="_blank"
-      >
-        <img
-          alt="github-logo"
-          aria-label="github-logo"
-          class="w-6"
-          src="/src/assets/images/github-logo.svg"
-        />
-        <span
-          aria-label="user-github-name"
-          class="text-white"
-        >
-          testeuser
-        </span>
-      </a>
-      <p
-        aria-label="user-bio"
-        class="font-mono break-before-auto"
-      >
-        lorem ipsum dolor sit amet
-      </p>
-    </div>
-    <div
-      class="user-stats flex justify-around gap-3 w-[75%]"
+        testeuser
+      </span>
+    </a>
+    <p
+      aria-label="user-bio"
+      class="font-mono break-before-auto"
     >
-      <p
-        aria-label="user-followers"
-        class="stat"
-      >
-         Followers 
-        <span
-          class="font-bold"
-        >
-          0
-        </span>
-      </p>
-      <p
-        aria-label="user-following"
-        class="stat"
-      >
-         Following 
-        <span
-          class="font-bold"
-        >
-          5
-        </span>
-      </p>
-    </div>
-    <routerlink
-      class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md"
-      to="/repos"
-    >
-      View Repositories
-    </routerlink>
+      lorem ipsum dolor sit amet
+    </p>
   </div>
+  <div
+    class="user-stats flex justify-around gap-3 w-[75%]"
+  >
+    <p
+      aria-label="user-followers"
+      class="stat"
+    >
+       Followers 
+      <span
+        class="font-bold"
+      >
+        0
+      </span>
+    </p>
+    <p
+      aria-label="user-following"
+      class="stat"
+    >
+       Following 
+      <span
+        class="font-bold"
+      >
+        5
+      </span>
+    </p>
+  </div>
+  <routerlink
+    class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md"
+    to="/repos"
+  >
+    View Repositories
+  </routerlink>
 </section>
 `;
