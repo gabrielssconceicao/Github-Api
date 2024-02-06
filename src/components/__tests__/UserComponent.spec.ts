@@ -39,10 +39,6 @@ describe('<UserComponent />', () => {
     const userFollowing = wrapper.find('p[aria-label="user-following"]');
     expect(userFollowing.exists()).toBe(true);
     expect(userFollowing.text()).toBe(`Following ${userMock.following}`);
-
-    const userLocation = wrapper.find('p[aria-label="user-location"]');
-    expect(userLocation.exists()).toBe(true);
-    expect(userLocation.text()).toBe(`Location ${userMock.location}`);
   });
 
   it('should render correctly with null props', () => {
@@ -59,9 +55,6 @@ describe('<UserComponent />', () => {
 
     const userName = wrapper.find('h2');
     expect(userName.exists()).toBe(false);
-
-    const userLocation = wrapper.find('p[aria-label="user-location"');
-    expect(userLocation.exists()).toBe(false);
 
     const userBio = wrapper.find('p[aria-label="user-bio"');
     expect(userBio.exists()).toBe(false);

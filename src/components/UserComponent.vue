@@ -25,15 +25,12 @@ const props = defineProps<{ user: IUser }>()
         <p v-if="props.user.bio" class="font-mono break-before-auto" aria-label="user-bio">{{ props.user.bio }}</p>
       </div>
 
-      <div class="user-stats flex flex-col gap-3 w-[50%]">
-        <div class="follows flex justify-around gap-2 flex-1">
-          <p class=" stat" aria-label="user-followers">Followers <span>{{ props.user.followers }}</span></p>
-          <p class="stat" aria-label="user-following">Following <span>{{ props.user.following }}</span></p>
-        </div>
-        <div class="flex justify-around gap-2 flex-1">
-        </div>
-        <p class="stat flex-1" v-if="props.user.location" aria-label="user-location">Location
-          <span>{{ props.user.location }}</span>
+      <div class="user-stats flex justify-around gap-3 w-[75%]">
+        <p class=" stat" aria-label="user-followers">
+          Followers <span class="font-bold">{{ props.user.followers }}</span>
+        </p>
+        <p class="stat" aria-label="user-following">
+          Following <span class="font-bold">{{ props.user.following }}</span>
         </p>
       </div>
 

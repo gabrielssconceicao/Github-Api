@@ -51,40 +51,28 @@ exports[`<UserComponent /> > should match snapshot 1`] = `
       </p>
     </div>
     <div
-      class="user-stats flex flex-col gap-3 w-[50%]"
+      class="user-stats flex justify-around gap-3 w-[75%]"
     >
-      <div
-        class="follows flex justify-around gap-2 flex-1"
-      >
-        <p
-          aria-label="user-followers"
-          class="stat"
-        >
-          Followers 
-          <span>
-            0
-          </span>
-        </p>
-        <p
-          aria-label="user-following"
-          class="stat"
-        >
-          Following 
-          <span>
-            5
-          </span>
-        </p>
-      </div>
-      <div
-        class="flex justify-around gap-2 flex-1"
-      />
       <p
-        aria-label="user-location"
-        class="stat flex-1"
+        aria-label="user-followers"
+        class="stat"
       >
-        Location 
-        <span>
-          Brazil
+         Followers 
+        <span
+          class="font-bold"
+        >
+          0
+        </span>
+      </p>
+      <p
+        aria-label="user-following"
+        class="stat"
+      >
+         Following 
+        <span
+          class="font-bold"
+        >
+          5
         </span>
       </p>
     </div>
