@@ -1,16 +1,16 @@
 import type { IUserResponse, IUser } from '@/types/user';
-export const fetchUser = async (userLogin: string) => {
-  let user: IUserResponse;
-
+export const fetchUser = async (userLogin: string): Promise<IUserResponse> => {
   try {
     const response = await fetch(`https://api.github.com/users/${userLogin}`);
-    const data: IUser = await response.json();
-    user = { user: data, status: response.status };
-  } catch (error) {
-    user = {
+    const data = await response.json();
+    return {
+      status: response.status,
+      user: data,
+    };
+  } catch (error: any) {
+    return {
+      status: error.status,
       user: {} as IUser,
-      status: 404,
     };
   }
-  return user;
 };

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
 import UserComponent from '../UserComponent.vue';
-import { user as userMock } from '@/assets/mock';
+import { user as userMock } from '@/mock';
 describe('<UserComponent />', () => {
   it('should render correctly', () => {
     const wrapper = mount(UserComponent, {
