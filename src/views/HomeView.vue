@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HeaderComponent from '@/components/HeaderComponent.vue';
-import UserComponent from '@/components/UserComponent.vue';
-import { user } from '@/assets/mock'
+import UserContainer from '@/components/UserContainer.vue';
+
 </script>
 <template>
   <HeaderComponent />
-  <UserComponent :user="user" />
+  <UserContainer />
 </template>

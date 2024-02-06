@@ -8,3 +8,8 @@ export interface IUser {
   html_url: string;
   bio: null | string;
 }
+
+export interface IUserResponse {
+  user: IUser;
+  status: number;
+}

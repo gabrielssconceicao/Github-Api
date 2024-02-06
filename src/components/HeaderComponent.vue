@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-
+import { useUserStore } from '@/stores/user'
+const userStore = useUserStore()
 const inputValue = ref('');
 
 const handleSubmit = () => {
-  console.log(inputValue.value)
+  userStore.searchUser(inputValue.value)
 }
 </script>
 <template>
