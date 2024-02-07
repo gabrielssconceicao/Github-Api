@@ -56,7 +56,7 @@ exports[`<UserComponent /> > should match snapshot 1`] = `
     </p>
   </div>
   <div
-    class="user-stats flex justify-around gap-3 w-[75%]"
+    class="flex justify-around flex-wrap gap-3 w-[75%]"
     data-v-7af04be9=""
   >
     <p
