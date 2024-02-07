@@ -10,8 +10,6 @@ import {
 
 export const restHandlers = [
   http.get('https://api.github.com/users/:user', ({ params }) => {
-    const { user } = params;
-    console.log(user);
     if (params.user === 'resolveTest') {
       return HttpResponse.json(userResponseSuccess.user, {
         status: userResponseSuccess.status,
