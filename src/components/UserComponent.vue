@@ -24,7 +24,7 @@ const props = defineProps<{ user: IUser }>()
       <p v-if="props.user.bio" class="font-mono break-before-auto" aria-label="user-bio">{{ props.user.bio }}</p>
     </div>
 
-    <div class="user-stats flex justify-around gap-3 w-[75%]">
+    <div class="flex justify-around flex-wrap gap-3 w-[75%] ">
       <p class=" stat" aria-label="user-followers">
         Followers <span class="font-bold">{{ props.user.followers }}</span>
       </p>
