@@ -2,6 +2,7 @@
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import UserContainer from '@/components/UserContainer.vue';
 import UserComponent from '@/components/UserComponent.vue';
+import UserError from '@/components/UserError.vue';
 import { computed } from 'vue';
 import { useUserStore } from '@/stores/user';
 const userStore = useUserStore()
@@ -12,6 +13,6 @@ const responseError = computed(() => userStore.githubUser.status === 404)
   <HeaderComponent />
   <UserContainer>
     <UserComponent v-if="responseFulfilled" :user="userStore.githubUser.user" />
-    <h2 v-if="responseError">No user found</h2>
+    <UserError v-if="responseError" />
   </UserContainer>
 </template>
