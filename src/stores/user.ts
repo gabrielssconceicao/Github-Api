@@ -2,13 +2,17 @@ import { ref } from 'vue';
 import { defineStore } from 'pinia';
 import type { IUserResponse } from '@/types/user';
 import { fetchUser } from '@/hooks/fetchUser';
-export const useUserStore = defineStore('counter', () => {
+export const useUserStore = defineStore('user', () => {
   const githubUser = ref<IUserResponse>({} as IUserResponse);
-
-  async function searchUser(userLogin: string) {
-    const data = await fetchUser(userLogin);
+  const inputValue = ref('');
+  async function searchUser() {
+    const data = await fetchUser(inputValue.value);
     githubUser.value = data;
   }
 
-  return { githubUser, searchUser };
+  function setInputValue(value: string) {
+    inputValue.value = value;
+  }
+
+  return { githubUser, searchUser, setInputValue, inputValue };
 });

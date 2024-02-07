@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loadStore > should change load to false 1`] = `
+{
+  "loading": false,
+}
+`;
+
+exports[`loadStore > should change load to true 1`] = `
+{
+  "loading": true,
+}
+`;
+
+exports[`loadStore > should init with load = false 1`] = `
+{
+  "loading": false,
+}
+`;

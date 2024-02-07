@@ -1,32 +1,8 @@
-import { expect, it, describe, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
 import HeaderComponentVue from '../HeaderComponent.vue';
-import { createPinia, setActivePinia } from 'pinia';
 
-//   it('should submit the form', async () => {
-//     const wrapper = mount(HeaderComponentVue);
-
-//     const searchInput = wrapper.find('input[type="text"]');
-//     const form = wrapper.find('form');
-
-//     await searchInput.setValue('test');
-
-//     await form.trigger('submit');
-//     await wrapper.vm.$nextTick();
-
-//     expect(wrapper.emitted('submit')).toBeTruthy();
-//   });
-
-//   it('should match the snapshot', () => {
-//     const wrapper = mount(HeaderComponentVue);
-//     expect(wrapper.element).toMatchSnapshot();
-//   });
-// });
 describe('<HeaderComponent />', () => {
-  beforeEach(() => {
-    setActivePinia(createPinia());
-  });
-
   it('should render header', () => {
     const wrapper = mount(HeaderComponentVue);
     expect(wrapper.findComponent('header').exists()).toBe(true);

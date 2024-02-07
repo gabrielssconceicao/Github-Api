@@ -2,7 +2,7 @@ import { beforeEach, beforeAll, afterEach, afterAll } from 'vitest';
 import { cleanup } from '@testing-library/vue';
 import { HttpResponse, http } from 'msw';
 import { setupServer } from 'msw/node';
-
+import { createPinia, setActivePinia } from 'pinia';
 import {
   userResponseSuccess,
   userResponseError,
@@ -29,4 +29,5 @@ afterAll(() => server.close());
 
 beforeEach(() => {
   cleanup();
+  setActivePinia(createPinia());
 });

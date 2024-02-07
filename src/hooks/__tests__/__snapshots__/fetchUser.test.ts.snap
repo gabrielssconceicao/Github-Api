@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fetchUser() > should fetch user data error 1`] = `
+{
+  "status": 404,
+  "user": {},
+}
+`;
+
+exports[`fetchUser() > should fetch user data successively 1`] = `
+{
+  "status": 200,
+  "user": {
+    "avatar_url": "https://avatars.githubusercontent.com/u/10590076?v=4",
+    "bio": "lorem ipsum dolor sit amet",
+    "followers": 0,
+    "following": 5,
+    "html_url": "https://github.com/testeuser",
+    "location": "Brazil",
+    "login": "testeuser",
+    "name": "Teste User",
+    "public_repos": 5,
+  },
+}
+`;

@@ -1,32 +1,43 @@
-import { describe, it, beforeEach, expect } from 'vitest';
-import { setActivePinia, createPinia } from 'pinia';
+import { describe, it, expect } from 'vitest';
 import { useUserStore } from '../user';
 import { userResponseError, userResponseSuccess } from '@/mock/__tests__/user';
 describe('userStore', () => {
-  beforeEach(() => {
-    setActivePinia(createPinia());
-  });
-
   it('should init with an empty user', () => {
     const userStore = useUserStore();
     expect(userStore.githubUser.status).toBe(undefined);
     expect(userStore.githubUser.user).toBe(undefined);
-    expect(userStore).toMatchSnapshot();
+    expect(userStore.inputValue).toBe('');
+    const { githubUser, inputValue } = userStore;
+    expect({ githubUser, inputValue }).toMatchSnapshot();
+  });
+
+  it('should set input value', () => {
+    const userStore = useUserStore();
+    userStore.setInputValue('teste');
+    expect(userStore.inputValue).toBe('teste');
+    expect(userStore.githubUser.status).toBe(undefined);
+    expect(userStore.githubUser.user).toBe(undefined);
+    const { githubUser, inputValue } = userStore;
+    expect({ githubUser, inputValue }).toMatchSnapshot();
   });
 
   it('should search user ', async () => {
     const userStore = useUserStore();
-    await userStore.searchUser('resolveTest');
+    userStore.setInputValue('resolveTest');
+    await userStore.searchUser();
     expect(userStore.githubUser.status).toBe(userResponseSuccess.status);
     expect(userStore.githubUser.user).toEqual(userResponseSuccess.user);
-    expect(userStore).toMatchSnapshot();
+    const { githubUser, inputValue } = userStore;
+    expect({ githubUser, inputValue }).toMatchSnapshot();
   });
 
   it('should search user error', async () => {
     const userStore = useUserStore();
-    await userStore.searchUser('rejectTest');
+    userStore.setInputValue('rejectTest');
+    await userStore.searchUser();
     expect(userStore.githubUser.status).toBe(userResponseError.status);
     expect(userStore.githubUser.user).toEqual(userResponseError.user);
-    expect(userStore).toMatchSnapshot();
+    const { githubUser, inputValue } = userStore;
+    expect({ githubUser, inputValue }).toMatchSnapshot();
   });
 });

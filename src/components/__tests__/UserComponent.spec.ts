@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import { RouterLink } from 'vue-router';
 import UserComponent from '../UserComponent.vue';
 import { user as userMock } from '@/mock';
 
