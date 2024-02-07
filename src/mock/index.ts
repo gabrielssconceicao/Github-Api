@@ -8,4 +8,5 @@ export const user: IUser = {
   location: 'Brazil',
   html_url: 'https://github.com/testeuser',
   bio: 'lorem ipsum dolor sit amet',
+  public_repos: 5,
 };

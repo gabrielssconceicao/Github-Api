@@ -31,11 +31,21 @@ const props = defineProps<{ user: IUser }>()
       <p class="stat" aria-label="user-following">
         Following <span class="font-bold">{{ props.user.following }}</span>
       </p>
+      <p class="stat" aria-label="user-repos">
+        Public Repos <span class="font-bold">{{ props.user.public_repos }}</span>
+      </p>
     </div>
 
-    <RouterLink to="/repos"
-      class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md">View
-      Repositories</RouterLink>
+    <RouterLink v-if="props.user.public_repos" aria-label="user-repos-link" to="/repos"
+      class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md">
+      View Repositories
+    </RouterLink>
 
   </section>
 </template>
+
+<style scoped>
+.stat {
+  @apply bg-primary text-sm rounded-lg p-2 text-white flex flex-col items-center justify-center gap-1
+}
+</style>

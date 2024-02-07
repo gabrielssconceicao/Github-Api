@@ -3,6 +3,4 @@
 @tailwind utilities;
 
 
-.stat {
-  @apply bg-primary text-sm rounded-lg p-2 text-white flex flex-col items-center justify-center gap-1
-}
+

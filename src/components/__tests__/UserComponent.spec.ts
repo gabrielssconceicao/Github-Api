@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
+import { RouterLink } from 'vue-router';
 import UserComponent from '../UserComponent.vue';
 import { user as userMock } from '@/mock';
+
 describe('<UserComponent />', () => {
   it('should render correctly', () => {
     const wrapper = mount(UserComponent, {
@@ -39,6 +41,13 @@ describe('<UserComponent />', () => {
     const userFollowing = wrapper.find('p[aria-label="user-following"]');
     expect(userFollowing.exists()).toBe(true);
     expect(userFollowing.text()).toBe(`Following ${userMock.following}`);
+
+    const userRepos = wrapper.find('p[aria-label="user-repos"]');
+    expect(userRepos.exists()).toBe(true);
+    expect(userRepos.text()).toBe(`Public Repos ${userMock.public_repos}`);
+
+    const userReposLink = wrapper.find('[aria-label="user-repos-link"]');
+    expect(userReposLink.exists()).toBe(true);
   });
 
   it('should render correctly with null props', () => {
@@ -78,6 +87,17 @@ describe('<UserComponent />', () => {
     expect(userAvatar.exists()).toBe(true);
     expect(userAvatar.attributes('src')).toBe(userMock.avatar_url);
     expect(userAvatar.attributes('alt')).toBe(`${userMock.login} avatar`);
+  });
+
+  it('should not render router-link if user has 0 repos', () => {
+    const wrapper = mount(UserComponent, {
+      props: {
+        user: { ...userMock, public_repos: 0 },
+      },
+    });
+
+    const userReposLink = wrapper.find('[aria-label="user-repos-link"]');
+    expect(userReposLink.exists()).toBe(false);
   });
 
   it('should match snapshot', () => {

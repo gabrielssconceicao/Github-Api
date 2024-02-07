@@ -7,6 +7,7 @@ export interface IUser {
   location: null | string;
   html_url: string;
   bio: null | string;
+  public_repos: number;
 }
 
 export interface IUserResponse {
