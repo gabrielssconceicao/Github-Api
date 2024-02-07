@@ -5,7 +5,7 @@ const userStore = useUserStore()
 const inputValue = ref('');
 
 const handleSubmit = () => {
-  userStore.searchUser(inputValue.value)
+  userStore.setInputValue(inputValue.value)
 }
 </script>
 <template>
