@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Loading /> > should match snapshot 1`] = `
+<div
+  class="w-[50vw] h-[50vw] border-2 border-t-transparent border-white rounded-full animate-spin"
+/>
+`;
