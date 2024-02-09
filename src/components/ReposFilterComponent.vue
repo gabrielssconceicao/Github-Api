@@ -33,7 +33,7 @@ const isSelected = (value: string) => {
 </template>
 <style scoped>
 button {
-  @apply font-mono text-sm p-2 rounded-md flex flex-row items-center justify-center gap-1 bg-zinc-700 transition-colors md:flex-1 md:flex md:justify-between;
+  @apply font-mono text-sm p-2 rounded-md flex flex-row items-center justify-center gap-1 bg-zinc-700 transition-colors flex-1 flex justify-between;
 }
 
 button:hover,
