@@ -5,7 +5,7 @@ import ReposHeader from './ReposHeader.vue';
 
 <template>
   <ReposHeader :name="user.name || user.login" />
-  <section class="h-dvh">
+  <section class="h-[calc(100dvh-51.2px)]">
 
   </section>
 </template>
