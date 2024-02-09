@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ReposHeader /> > should render with login 1`] = `
+<header
+  class="bg-header p-2 flex items-center text-white"
+>
+  <routerlink
+    class="w-14 border-white border-2 p-1 flex justify-center items-center"
+    to="/"
+  >
+    Back 
+  </routerlink>
+  <p
+    class="flex-1 text-center"
+  >
+    <span
+      class="font-bold font-mono text-xl"
+    >
+      testeuser
+    </span>
+     Repos 
+  </p>
+</header>
+`;
+
+exports[`<ReposHeader /> > should render with userName 1`] = `
+<header
+  class="bg-header p-2 flex items-center text-white"
+>
+  <routerlink
+    class="w-14 border-white border-2 p-1 flex justify-center items-center"
+    to="/"
+  >
+    Back 
+  </routerlink>
+  <p
+    class="flex-1 text-center"
+  >
+    <span
+      class="font-bold font-mono text-xl"
+    >
+      Teste User
+    </span>
+     Repos 
+  </p>
+</header>
+`;
