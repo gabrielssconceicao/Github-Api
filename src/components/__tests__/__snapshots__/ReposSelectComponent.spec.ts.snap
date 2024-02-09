@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ReposSelect /> > should render with empty repos 1`] = `
+<select
+  class="w-full p-2 bg-primary text-white"
+  id="repositories"
+  name="repositories"
+>
+  <option
+    value=""
+  >
+    --All Languages--
+  </option>
+  
+  
+</select>
+`;
+
+exports[`<ReposSelect /> > should render with the langs 1`] = `
+<select
+  class="w-full p-2 bg-primary text-white"
+  id="repositories"
+  name="repositories"
+>
+  <option
+    value=""
+  >
+    --All Languages--
+  </option>
+  
+  <option
+    value="Javascript"
+  >
+    <span>
+      Javascript
+    </span>
+    <span>
+      (3)
+    </span>
+  </option>
+  <option
+    value="HTML"
+  >
+    <span>
+      HTML
+    </span>
+    <span>
+      (2)
+    </span>
+  </option>
+  <option
+    value="Python"
+  >
+    <span>
+      Python
+    </span>
+    <span>
+      (1)
+    </span>
+  </option>
+  <option
+    value="Ruby"
+  >
+    <span>
+      Ruby
+    </span>
+    <span>
+      (1)
+    </span>
+  </option>
+  <option
+    value="Java"
+  >
+    <span>
+      Java
+    </span>
+    <span>
+      (1)
+    </span>
+  </option>
+  <option
+    value="C++"
+  >
+    <span>
+      C++
+    </span>
+    <span>
+      (1)
+    </span>
+  </option>
+  <option
+    value="Typescript"
+  >
+    <span>
+      Typescript
+    </span>
+    <span>
+      (1)
+    </span>
+  </option>
+  
+</select>
+`;
