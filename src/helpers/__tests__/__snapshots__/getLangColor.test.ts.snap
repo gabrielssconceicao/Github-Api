@@ -1,19 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`getLangColor > should return the correct color for the given language > getColor 1`] = `"#f7df1e"`;
-
 exports[`getLangColor > should return the correct color for the given language > getLangColor("JavaScript") 1`] = `"#f7df1e"`;
 
 exports[`getLangColor > should return the correct color for the given language > getLangColor('Java') 1`] = `"#b07219"`;
 
 exports[`getLangColor > should return the correct color for the given language > getLangColor('Python') 1`] = `"#3572A5"`;
 
-exports[`getLangColor > should return the correct color for the given language 1`] = `"#f7df1e"`;
-
-exports[`getLangColor > should return the correct color for the given language 2`] = `"#3572A5"`;
-
-exports[`getLangColor > should return the correct color for the given language 3`] = `"#b07219"`;
-
 exports[`getLangColor > should return the default color for an unknown language > getLangColor('Unknown') 1`] = `"#ffffff"`;
-
-exports[`getLangColor > should return the default color for an unknown language 1`] = `"#ffffff"`;

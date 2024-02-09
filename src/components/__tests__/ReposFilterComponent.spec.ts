@@ -71,4 +71,22 @@ describe('<ReposFilter />', () => {
 
     expect(wrapper.element).toMatchSnapshot();
   });
+
+  it('should clean the selected buttons', async () => {
+    const langs = langSeparator(repos);
+    const wrapper = mount(ReposFilter, {
+      props: {
+        filters: langs,
+      },
+    });
+    const allButtons = wrapper.find('div').findAll('button');
+    const button = allButtons[0];
+    await button.trigger('click');
+    const clearButton = allButtons[allButtons.length - 1];
+    await clearButton.trigger('click');
+    console.log(clearButton);
+    for (let i = 0; i < allButtons.length; i++) {
+      expect(allButtons[i].classes()).not.toContain('selected');
+    }
+  });
 });
