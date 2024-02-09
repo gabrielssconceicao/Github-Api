@@ -1,12 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<ReposFilter /> > should have more than one button 1`] = `
+exports[`<ReposFilter /> > should have class selected when clicked and unselected when click in another button 1`] = `
 <div
   class="w-full grid grid-cols-2 gap-2 md:flex md:justify-around md:flex-wrap p-2"
   data-v-b209dafd=""
 >
   
   <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
     value="Javascript"
@@ -23,6 +24,7 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(227, 76, 38); --hover-bg-color: #e34c26; --hover-text-color: #111111;"
     value="HTML"
@@ -39,6 +41,7 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(53, 114, 165); --hover-bg-color: #3572A5; --hover-text-color: #111111;"
     value="Python"
@@ -55,6 +58,7 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class="selected"
     data-v-b209dafd=""
     style="color: rgb(204, 52, 45); --hover-bg-color: #CC342D; --hover-text-color: #111111;"
     value="Ruby"
@@ -71,6 +75,7 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(176, 114, 25); --hover-bg-color: #b07219; --hover-text-color: #111111;"
     value="Java"
@@ -87,6 +92,7 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(243, 75, 125); --hover-bg-color: #f34b7d; --hover-text-color: #111111;"
     value="C++"
@@ -103,6 +109,146 @@ exports[`<ReposFilter /> > should have more than one button 1`] = `
     </span>
   </button>
   <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
+    value="Typescript"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Typescript
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  
+  <button
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #222222;"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+       Clear Filter 
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<ReposFilter /> > should have more than one button 1`] = `
+<div
+  class="w-full grid grid-cols-2 gap-2 md:flex md:justify-around md:flex-wrap p-2"
+  data-v-b209dafd=""
+>
+  
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
+    value="Javascript"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Javascript
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      3
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(227, 76, 38); --hover-bg-color: #e34c26; --hover-text-color: #111111;"
+    value="HTML"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      HTML
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      2
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(53, 114, 165); --hover-bg-color: #3572A5; --hover-text-color: #111111;"
+    value="Python"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Python
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(204, 52, 45); --hover-bg-color: #CC342D; --hover-text-color: #111111;"
+    value="Ruby"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Ruby
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(176, 114, 25); --hover-bg-color: #b07219; --hover-text-color: #111111;"
+    value="Java"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Java
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(243, 75, 125); --hover-bg-color: #f34b7d; --hover-text-color: #111111;"
+    value="C++"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      C++
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
     data-v-b209dafd=""
     style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
     value="Typescript"
@@ -138,6 +284,145 @@ exports[`<ReposFilter /> > should have only one button 1`] = `
   data-v-b209dafd=""
 >
   
+  
+  <button
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #222222;"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+       Clear Filter 
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<ReposFilter /> > should init without class selected 1`] = `
+<div
+  class="w-full grid grid-cols-2 gap-2 md:flex md:justify-around md:flex-wrap p-2"
+  data-v-b209dafd=""
+>
+  
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
+    value="Javascript"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Javascript
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      3
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(227, 76, 38); --hover-bg-color: #e34c26; --hover-text-color: #111111;"
+    value="HTML"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      HTML
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      2
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(53, 114, 165); --hover-bg-color: #3572A5; --hover-text-color: #111111;"
+    value="Python"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Python
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(204, 52, 45); --hover-bg-color: #CC342D; --hover-text-color: #111111;"
+    value="Ruby"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Ruby
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(176, 114, 25); --hover-bg-color: #b07219; --hover-text-color: #111111;"
+    value="Java"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Java
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(243, 75, 125); --hover-bg-color: #f34b7d; --hover-text-color: #111111;"
+    value="C++"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      C++
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
+  <button
+    class=""
+    data-v-b209dafd=""
+    style="color: rgb(255, 255, 255); --hover-bg-color: #ffffff; --hover-text-color: #111111;"
+    value="Typescript"
+  >
+    <span
+      data-v-b209dafd=""
+    >
+      Typescript
+    </span>
+    <span
+      data-v-b209dafd=""
+    >
+      1
+    </span>
+  </button>
   
   <button
     data-v-b209dafd=""
