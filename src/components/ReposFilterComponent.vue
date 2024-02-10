@@ -14,35 +14,38 @@ const setFilter = (value: string) => {
 const isSelected = (value: string) => {
   return filterValue.value === value ? 'selected' : ''
 }
+
 </script>
 <template>
-  <div class="w-full grid grid-cols-2 gap-2 md:flex md:justify-around md:flex-wrap  p-2">
-    <button v-for="filter in  props.filters " :key="filter.name" :value="filter.name" :class="isSelected(filter.name)"
-      :style="{ color: getLangColor(filter.name), '--hover-bg-color': getLangColor(filter.name), '--hover-text-color': '#111111' }"
-      @click="() => setFilter(filter.name)">
-      <span>{{ filter.name }}</span>
-      <span>{{ filter.count }}</span>
+  <div class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2">
+    <button @click="setFilter('')" class="clear">
+      <span>Clear Filter</span>
     </button>
-    <button :style="{ color: '#ffffff', '--hover-bg-color': '#222222' }" value="" @click="() => setFilter('')">
-      <span>
-        Clear
-        Filter
-      </span>
+    <button v-for="lang in props.filters" :key="lang.name.toLowerCase()" :value="lang.name" @click="setFilter(lang.name)"
+      :style="{ '--text-color': getLangColor(lang.name), '--bg-color': '#1f1f1f' }" :class="isSelected(lang.name)">
+      <span>{{ lang.name }}</span>
+      <span>{{ lang.count }}</span>
     </button>
   </div>
 </template>
 <style scoped>
 button {
-  @apply font-mono text-sm p-2 rounded-md flex flex-row items-center justify-center gap-1 bg-zinc-700 transition-colors flex-1 flex justify-between;
+  @apply p-1 flex flex-row justify-around items-center rounded-2xl md:flex-1 bg-[var(--bg-color)] hover:bg-[var(--text-color)] transition-colors
 }
 
-button:hover,
+button span {
+  @apply text-sm font-mono font-bold md:text-lg text-[var(--text-color)]
+}
+
+button:hover span, button.selected span {
+  @apply text-[var(--bg-color)]
+}
+
 button.selected {
-  background-color: var(--hover-bg-color);
+  @apply bg-[var(--text-color)]
 }
 
-button:hover span,
-button.selected span {
-  color: var(--hover-text-color);
+button.clear {
+  @apply bg-white
 }
 </style>

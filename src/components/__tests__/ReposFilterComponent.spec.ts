@@ -1,92 +1,60 @@
-import { describe, expect, it } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
 import ReposFilter from '../ReposFilterComponent.vue';
+
 import { repos } from '@/mock';
 import { langSeparator } from '@/helpers/langSeparator';
 
-describe('<ReposFilter />', () => {
-  it('should render correcty', () => {
-    const wrapper = mount(ReposFilter, {
-      props: {
-        filters: langSeparator([]),
-      },
-    });
-    expect(wrapper.find('div').exists()).toBe(true);
-  });
+const separedLangs = langSeparator(repos);
 
-  it('should have only one button', () => {
-    const wrapper = mount(ReposFilter, {
-      props: {
-        filters: langSeparator([]),
-      },
-    });
-    expect(wrapper.findAll('button').length).toBe(1);
-    expect(wrapper.findAll('button')[0].text()).toBe('Clear Filter');
+describe('<ReposFilter', () => {
+  it('should render correctly', () => {
+    const wrapper = mount(ReposFilter);
+    expect(wrapper.exists()).toBe(true);
+    const btns = wrapper.findAll('button');
+    expect(btns.length).toBe(1);
+    expect(btns[0].text()).toBe('Clear Filter');
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  it('should have more than one button', () => {
-    const langs = langSeparator(repos);
+  it('should render with filter', () => {
     const wrapper = mount(ReposFilter, {
       props: {
-        filters: langs,
+        filters: separedLangs,
       },
     });
-    expect(wrapper.find('div').findAll('button').length).toBe(langs.length + 1);
-    expect(wrapper.element).toMatchSnapshot();
-  });
 
-  it('should init without class selected', () => {
-    const langs = langSeparator(repos);
-    const wrapper = mount(ReposFilter, {
-      props: {
-        filters: langs,
-      },
-    });
-    for (let i = 0; i < wrapper.find('div').findAll('button').length; i++) {
-      expect(wrapper.find('div').findAll('button')[i].classes()).not.toContain(
-        'selected',
+    const btns = wrapper.findAll('button');
+    expect(btns.length).toBe(separedLangs.length + 1);
+
+    for (let i = 1; i < btns.length; i++) {
+      expect(btns[i].text()).toBe(
+        `${separedLangs[i - 1].name}${separedLangs[i - 1].count}`,
       );
     }
-    expect(wrapper.element).toMatchSnapshot();
-  });
-
-  it('should have class selected when clicked and unselected when click in another button', async () => {
-    const langs = langSeparator(repos);
-    const wrapper = mount(ReposFilter, {
-      props: {
-        filters: langs,
-      },
-    });
-    const button = wrapper.find('div').findAll('button')[0];
-    const button2 = wrapper.find('div').findAll('button')[3];
-
-    await button.trigger('click');
-    expect(button.classes()).toContain('selected');
-    expect(button2.classes()).not.toContain('selected');
-
-    await button2.trigger('click');
-    expect(button.classes()).not.toContain('selected');
-    expect(button2.classes()).toContain('selected');
 
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  it('should clean the selected buttons', async () => {
-    const langs = langSeparator(repos);
+  it('should check if when the button is clicked', async () => {
     const wrapper = mount(ReposFilter, {
       props: {
-        filters: langs,
+        filters: separedLangs,
       },
     });
-    const allButtons = wrapper.find('div').findAll('button');
-    const button = allButtons[0];
-    await button.trigger('click');
-    const clearButton = allButtons[allButtons.length - 1];
-    await clearButton.trigger('click');
-    console.log(clearButton);
-    for (let i = 0; i < allButtons.length; i++) {
-      expect(allButtons[i].classes()).not.toContain('selected');
-    }
+
+    const btns = wrapper.findAll('button');
+
+    await btns[2].trigger('click');
+
+    expect(wrapper.emitted('filter')).toBeTruthy();
+    expect(wrapper.emitted('filter')).toHaveLength(1);
+    expect(btns[2].classes()).includes('selected');
+
+    await btns[0].trigger('click');
+    expect(btns[2].classes()).not.includes('selected');
+
+    await btns[2].trigger('click');
+    expect(wrapper.element).toMatchSnapshot();
   });
 });
