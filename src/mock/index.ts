@@ -12,72 +12,76 @@ export const user: IUser = {
   bio: 'lorem ipsum dolor sit amet',
   public_repos: 5,
 };
-// JS - 3
-// HTML - 2
-// python - 1
-// Ruby - 1
-//Java - 1
-//C++ - 1
-//Typescript - 1
+
 export const repos: IRepos[] = [
   {
     name: 'Teste Repo 1',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Javascript',
+    id: 1,
   },
   {
     name: 'Teste Repo 2',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'HTML',
+    id: 2,
   },
   {
     name: 'Teste Repo 3',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Python',
+    id: 3,
   },
   {
     name: 'Teste Repo 4',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Javascript',
+    id: 4,
   },
   {
     name: 'Teste Repo 5',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Javascript',
+    id: 5,
   },
   {
     name: 'Teste Repo 6',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'HTML',
+    id: 6,
   },
   {
     name: 'Teste Repo 7',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Ruby',
+    id: 7,
   },
   {
     name: 'Teste Repo 8',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Java',
+    id: 8,
   },
   {
     name: 'Teste Repo 9',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'C++',
+    id: 9,
   },
   {
     name: 'Teste Repo 10',
     description: 'lorem ipsum dolor sit amet',
     html_url: 'https://github.com/testeuser/testerepo',
     language: 'Typescript',
+    id: 10,
   },
 ];

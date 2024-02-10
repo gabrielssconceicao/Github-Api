@@ -3,4 +3,5 @@ export interface IRepos {
   description: string | null;
   html_url: string;
   language: string;
+  id: number;
 }
