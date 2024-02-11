@@ -19,7 +19,7 @@ const isSelected = (value: string) => {
 <template>
   <div class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2">
     <button @click="setFilter('')" class="clear">
-      <span>Clear Filter</span>
+      <span>Clear</span>
     </button>
     <button v-for="lang in props.filters" :key="lang.name.toLowerCase()" :value="lang.name" @click="setFilter(lang.name)"
       :style="{ '--text-color': getLangColor(lang.name), '--bg-color': '#1f1f1f' }" :class="isSelected(lang.name)">

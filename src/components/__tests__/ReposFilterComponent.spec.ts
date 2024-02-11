@@ -13,7 +13,7 @@ describe('<ReposFilter', () => {
     expect(wrapper.exists()).toBe(true);
     const btns = wrapper.findAll('button');
     expect(btns.length).toBe(1);
-    expect(btns[0].text()).toBe('Clear Filter');
+    expect(btns[0].text()).toBe('Clear');
     expect(wrapper.element).toMatchSnapshot();
   });
 

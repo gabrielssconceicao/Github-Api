@@ -2,26 +2,31 @@
 
 exports[`ReposComponent > should not render p[aria-label="repo-description"] if description is null 1`] = `
 <div
-  class="bg-zinc-600 p-3 relative max-w-[300px] max-h-[150px] rounded-xl shadow-md before:w-2 before:absolute before:bg-[var(--lang-color)] before:top-0 before:left-0 before:bottom-0 before:rounded-tl-xl before:rounded-bl-xl md:text-xl md:w-[500px]"
+  data-v-7152ca0f=""
+  id="repo"
   style="--lang-color: #ffffff;"
 >
   <h3
     class="text-center p-1 font-bold font-serif"
+    data-v-7152ca0f=""
   >
     Teste Repo 1
   </h3>
   <!--v-if-->
   <div
     class="flex justify-between p-2"
+    data-v-7152ca0f=""
   >
     <p
       aria-label="repo-language"
       class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+      data-v-7152ca0f=""
     >
       Javascript
     </p>
     <a
-      class="border-white border-2 px-2 py-1 text-white"
+      class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+      data-v-7152ca0f=""
       href="https://github.com/testeuser/testerepo"
       target="_blank"
     >
@@ -33,31 +38,37 @@ exports[`ReposComponent > should not render p[aria-label="repo-description"] if 
 
 exports[`ReposComponent > should render correctly 1`] = `
 <div
-  class="bg-zinc-600 p-3 relative max-w-[300px] max-h-[150px] rounded-xl shadow-md before:w-2 before:absolute before:bg-[var(--lang-color)] before:top-0 before:left-0 before:bottom-0 before:rounded-tl-xl before:rounded-bl-xl md:text-xl md:w-[500px]"
+  data-v-7152ca0f=""
+  id="repo"
   style="--lang-color: #ffffff;"
 >
   <h3
     class="text-center p-1 font-bold font-serif"
+    data-v-7152ca0f=""
   >
     Teste Repo 1
   </h3>
   <p
     aria-label="repo-description"
     class="text-justify font-mono text-base break-words mt-3 mb-2"
+    data-v-7152ca0f=""
   >
     lorem ipsum dolor sit amet
   </p>
   <div
     class="flex justify-between p-2"
+    data-v-7152ca0f=""
   >
     <p
       aria-label="repo-language"
       class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+      data-v-7152ca0f=""
     >
       Javascript
     </p>
     <a
-      class="border-white border-2 px-2 py-1 text-white"
+      class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+      data-v-7152ca0f=""
       href="https://github.com/testeuser/testerepo"
       target="_blank"
     >

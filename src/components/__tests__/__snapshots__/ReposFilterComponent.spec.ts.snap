@@ -12,7 +12,7 @@ exports[`<ReposFilter > should check if when the button is clicked 1`] = `
     <span
       data-v-b209dafd=""
     >
-      Clear Filter
+      Clear
     </span>
   </button>
   
@@ -151,7 +151,7 @@ exports[`<ReposFilter > should render correctly 1`] = `
     <span
       data-v-b209dafd=""
     >
-      Clear Filter
+      Clear
     </span>
   </button>
   
@@ -171,7 +171,7 @@ exports[`<ReposFilter > should render with filter 1`] = `
     <span
       data-v-b209dafd=""
     >
-      Clear Filter
+      Clear
     </span>
   </button>
   
