@@ -17,7 +17,8 @@ const isSelected = (value: string) => {
 
 </script>
 <template>
-  <div class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2">
+  <div
+    class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section">
     <button @click="setFilter('')" class="clear">
       <span>Clear</span>
     </button>

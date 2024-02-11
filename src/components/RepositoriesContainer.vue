@@ -22,8 +22,8 @@ const getFilter = (value: string) => {
 <template>
   <ReposHeader :name="user.name || user.login" />
 
-  <section class="h-[calc(100dvh-51.2px)]" id="repos">
-    <ReposFilter :filters="langsRepos" @filter="getFilter" />
+  <section class="h-[calc(100dvh-51.2px)] relative" id="repos">
+    <ReposFilter :filters="langsRepos" @filter="getFilter" class="sticky top-0 z-10" />
     <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
       <TransitionGroup name="fade" tag="div" class="grid gap-3 place-items-center" id="repos">
         <ReposComponent v-for="repo in filteredRepos" :key="repo.id" :repos="repo" />
