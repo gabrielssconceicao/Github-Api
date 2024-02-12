@@ -5,7 +5,7 @@ import { user, repos } from '@/mock'
 import ReposHeader from './ReposHeader.vue';
 import ReposFilter from './ReposFilterComponent.vue';
 import ReposComponent from './ReposComponent.vue';
-
+import ReposPagination from './ReposPagination.vue';
 import { langSeparator } from '@/helpers/langSeparator';
 
 const filterValue = ref('');
@@ -22,7 +22,7 @@ const getFilter = (value: string) => {
 <template>
   <ReposHeader :name="user.name || user.login" />
 
-  <section class="h-[calc(100dvh-51.2px)] relative" id="repos">
+  <section class="min-h-[calc(100dvh-51.2px-40px)] max-h-[calc(100dvh-51.2px-40px)] overflow-y-auto  relative" id="repos">
     <ReposFilter :filters="langsRepos" @filter="getFilter" class="sticky top-0 z-10" />
     <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
       <TransitionGroup name="fade" tag="div" class="grid gap-3 place-items-center" id="repos">
@@ -30,6 +30,7 @@ const getFilter = (value: string) => {
       </TransitionGroup>
     </div>
   </section>
+  <ReposPagination total-pages="3" />
 </template>
 <style scoped>
 #repos {
