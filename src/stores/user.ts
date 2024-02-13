@@ -11,7 +11,6 @@ export const useUserStore = defineStore('user', () => {
     const data = await fetchUser(inputValue.value);
     githubUser.value = data;
     reposStore.setReposUrl(data.user.repos_url);
-    await reposStore.getRepos();
   }
 
   function setInputValue(value: string) {
