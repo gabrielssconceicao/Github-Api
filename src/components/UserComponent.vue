@@ -5,7 +5,7 @@ const props = defineProps<{ user: IUser }>()
 </script>
 <template>
   <section class="
-      container max-w-[500px]
+      container
       flex flex-col items-center justify-between gap-3
     bg-white p-3 rounded-lg shadow-md shadow-[#00000088]
       relative

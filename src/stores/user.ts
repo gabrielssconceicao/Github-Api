@@ -7,9 +7,11 @@ export const useUserStore = defineStore('user', () => {
   const githubUser = ref<IUserResponse>({} as IUserResponse);
   const inputValue = ref('');
   async function searchUser() {
+    const reposStore = useReposStore();
     const data = await fetchUser(inputValue.value);
     githubUser.value = data;
-    await useReposStore().getRepos();
+    reposStore.setReposUrl(data.user.repos_url);
+    await reposStore.getRepos();
   }
 
   function setInputValue(value: string) {
