@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed } from 'vue'
 
 
 import ReposHeader from './ReposHeader.vue';
-// import ReposFilter from './ReposFilterComponent.vue';
+import ReposFilter from './ReposFilterComponent.vue';
 import ReposComponent from './ReposComponent.vue';
 import ReposPagination from './ReposPagination.vue';
 
@@ -14,19 +14,18 @@ const useUser = useUserStore()
 const useRepos = useReposStore()
 const userName = computed(() => useUser.githubUser.user.name || useUser.githubUser.user.login)
 
-
-onMounted(async () => await useRepos.getRepos())
+console.log(useRepos.filteredReposCount)
 </script>
 
 <template>
   <ReposHeader :name="userName" />
 
   <section class="h-[calc(100dvh-51.2px-40px)] overflow-y-auto  relative" id="repos">
-    <!--
-    <ReposFilter :filters="langsRepos" @filter="getFilter" class="sticky top-0 z-10" /> -->
+
+    <ReposFilter :filters="useRepos.filteredReposCount" @filter="useRepos.setFilter" class="sticky top-0 z-10" />
     <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
       <TransitionGroup name="fade" tag="div" class="grid gap-3 place-items-center" id="repos">
-        <ReposComponent v-for="repo in useRepos.repos" :key="repo.id" :repos="repo" />
+        <ReposComponent v-for="repo in useRepos.filteredRepos" :key="repo.id" :repos="repo" />
       </TransitionGroup>
     </div>
   </section>

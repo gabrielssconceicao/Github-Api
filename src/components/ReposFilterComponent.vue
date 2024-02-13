@@ -22,9 +22,9 @@ const isSelected = (value: string) => {
     <button @click="setFilter('')" class="clear">
       <span>Clear</span>
     </button>
-    <button v-for="lang in props.filters" :key="lang.name.toLowerCase()" :value="lang.name" @click="setFilter(lang.name)"
+    <button v-for="lang in props.filters" :key="lang.name" :value="lang.name" @click="setFilter(lang.name)"
       :style="{ '--text-color': getLangColor(lang.name), '--bg-color': '#1f1f1f' }" :class="isSelected(lang.name)">
-      <span>{{ lang.name }}</span>
+      <span>{{ lang.name || 'No Language' }}</span>
       <span>{{ lang.count }}</span>
     </button>
   </div>
@@ -35,7 +35,7 @@ button {
 }
 
 button span {
-  @apply text-sm font-mono font-bold md:text-lg text-[var(--text-color)]
+  @apply text-sm font-mono font-bold md:text-base px-1 text-[var(--text-color)]
 }
 
 button:hover span, button.selected span {

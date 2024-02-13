@@ -10,9 +10,8 @@ const props = defineProps<{ repos: IRepos }>()
       aria-label="repo-description">{{
         props.repos.description }}</p>
     <div class="flex justify-around p-2">
-      <p v-if="props.repos.language"
-        class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-        aria-label="repo-language">{{ props.repos.language
+      <p class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+        aria-label="repo-language">{{ props.repos.language || 'No Language'
         }}
       </p>
       <a :href="props.repos.html_url" target="_blank"
