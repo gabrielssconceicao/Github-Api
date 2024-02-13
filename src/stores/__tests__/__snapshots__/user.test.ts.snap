@@ -21,6 +21,7 @@ exports[`userStore > should search user  1`] = `
       "login": "testeuser",
       "name": "Teste User",
       "public_repos": 5,
+      "repos_url": "https://api.github.com/users/testeuser/repos",
     },
   },
   "inputValue": "resolveTest",

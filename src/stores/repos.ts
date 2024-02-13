@@ -14,6 +14,10 @@ export const useReposStore = defineStore('repos', () => {
     repos.value = reposValue;
   }
 
+  const setFilter = (value: string) => {
+    filterValue.value = value;
+  };
+
   function setReposUrl(url: string) {
     reposUrl.value = url;
   }
@@ -41,14 +45,15 @@ export const useReposStore = defineStore('repos', () => {
     () => repos.value && langSeparator(repos.value),
   );
 
-  const setFilter = (value: string) => {
-    filterValue.value = value;
-  };
   return {
     filteredRepos,
     getRepos,
     filteredReposCount,
     setFilter,
     setReposUrl,
+    setRepos,
+    repos,
+    reposUrl,
+    filterValue,
   };
 });
