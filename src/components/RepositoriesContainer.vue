@@ -36,6 +36,8 @@ onMounted(async () => await useRepos.getRepos())
 #repos {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 .fade-enter-active,

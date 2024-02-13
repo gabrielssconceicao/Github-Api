@@ -40,7 +40,7 @@ export const languageColors: Record<string, string> = {
   'Objective-C++': '#6866fb',
   Crystal: '#000100',
 };
-export const getLangColor = (lang: string): string => {
+export const getLangColor = (lang: string = ''): string => {
   let language = '#ffffff';
   if (lang in languageColors) {
     language = languageColors[lang];
