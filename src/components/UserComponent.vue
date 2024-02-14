@@ -5,7 +5,7 @@ const props = defineProps<{ user: IUser }>()
 </script>
 <template>
   <section class="
-      container max-w-[500px]
+      container
       flex flex-col items-center justify-between gap-3
     bg-white p-3 rounded-lg shadow-md shadow-[#00000088]
       relative
@@ -36,7 +36,7 @@ const props = defineProps<{ user: IUser }>()
       </p>
     </div>
 
-    <RouterLink v-if="props.user.public_repos" aria-label="user-repos-link" to="/repos"
+    <RouterLink aria-label="user-repos-link" :to="`/${props.user.login}/repos`"
       class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md">
       View Repositories
     </RouterLink>

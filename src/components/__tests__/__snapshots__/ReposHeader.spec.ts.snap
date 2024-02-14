@@ -14,7 +14,7 @@ exports[`<ReposHeader /> > should render with login 1`] = `
     class="flex-1 text-center"
   >
     <span
-      class="font-bold font-mono text-xl"
+      class="font-bold font-mono text-xl text-primary"
     >
       testeuser
     </span>
@@ -37,7 +37,7 @@ exports[`<ReposHeader /> > should render with userName 1`] = `
     class="flex-1 text-center"
   >
     <span
-      class="font-bold font-mono text-xl"
+      class="font-bold font-mono text-xl text-primary"
     >
       Teste User
     </span>

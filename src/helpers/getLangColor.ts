@@ -3,6 +3,7 @@ export const languageColors: Record<string, string> = {
   Python: '#3572A5',
   Java: '#b07219',
   'C++': '#f34b7d',
+  C: '#555555',
   'C#': '#178600',
   PHP: '#4F5D95',
   TypeScript: '#2b7489',
@@ -40,7 +41,7 @@ export const languageColors: Record<string, string> = {
   'Objective-C++': '#6866fb',
   Crystal: '#000100',
 };
-export const getLangColor = (lang: string): string => {
+export const getLangColor = (lang: string = ''): string => {
   let language = '#ffffff';
   if (lang in languageColors) {
     language = languageColors[lang];

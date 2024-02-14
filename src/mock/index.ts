@@ -11,6 +11,7 @@ export const user: IUser = {
   html_url: 'https://github.com/testeuser',
   bio: 'lorem ipsum dolor sit amet',
   public_repos: 5,
+  repos_url: 'https://api.github.com/users/testeuser/repos',
 };
 
 export const repos: IRepos[] = [

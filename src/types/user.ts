@@ -8,6 +8,7 @@ export interface IUser {
   html_url: string;
   bio: null | string;
   public_repos: number;
+  repos_url: string;
 }
 
 export interface IUserResponse {

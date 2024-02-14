@@ -15,7 +15,7 @@ describe('ReposComponent', () => {
     const div = wrapper.findComponent(ReposComponent);
     expect(div.exists()).toBe(true);
 
-    const langColor = getLangColor(repo.language);
+    const langColor = getLangColor(repo.language as string);
     expect(div.attributes('style')).toBe(`--lang-color: ${langColor};`);
     expect(div.find('h3').text()).toBe(repo.name);
     expect(div.find('p[aria-label="repo-description"]').text()).toBe(
@@ -41,6 +41,20 @@ describe('ReposComponent', () => {
     const div = wrapper.findComponent(ReposComponent);
     expect(div.exists()).toBe(true);
     expect(div.find('p[aria-label="repo-description"]').exists()).toBe(false);
+    expect(wrapper.element).toMatchSnapshot();
+  });
+  it('should render p[aria-label="repo-language"] with No Language', () => {
+    const repo = repos[0];
+    const wrapper = mount(ReposComponent, {
+      props: {
+        repos: { ...repo, language: null },
+      },
+    });
+    const div = wrapper.findComponent(ReposComponent);
+    expect(div.exists()).toBe(true);
+    expect(div.find('p[aria-label="repo-language"]').text()).toBe(
+      'No Language',
+    );
     expect(wrapper.element).toMatchSnapshot();
   });
 });

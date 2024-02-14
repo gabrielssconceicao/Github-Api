@@ -1,0 +1,317 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useReposStore > init with all empty 1`] = `
+{
+  "filterValue": "",
+  "filteredRepos": [],
+  "filteredReposCount": [],
+  "repos": [],
+  "reposUrl": "",
+}
+`;
+
+exports[`useReposStore > should change the value of: repos, repoUrl, filteredRepos, filteredReposCount 1`] = `
+{
+  "filterValue": "",
+  "filteredRepos": [
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 1,
+      "language": "Javascript",
+      "name": "Teste Repo 1",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 2,
+      "language": "HTML",
+      "name": "Teste Repo 2",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 3,
+      "language": "Python",
+      "name": "Teste Repo 3",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 4,
+      "language": "Javascript",
+      "name": "Teste Repo 4",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 5,
+      "language": "Javascript",
+      "name": "Teste Repo 5",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 6,
+      "language": "HTML",
+      "name": "Teste Repo 6",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 7,
+      "language": "Ruby",
+      "name": "Teste Repo 7",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 8,
+      "language": "Java",
+      "name": "Teste Repo 8",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 9,
+      "language": "C++",
+      "name": "Teste Repo 9",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 10,
+      "language": "Typescript",
+      "name": "Teste Repo 10",
+    },
+  ],
+  "filteredReposCount": [
+    {
+      "count": 3,
+      "name": "Javascript",
+    },
+    {
+      "count": 2,
+      "name": "HTML",
+    },
+    {
+      "count": 1,
+      "name": "Python",
+    },
+    {
+      "count": 1,
+      "name": "Ruby",
+    },
+    {
+      "count": 1,
+      "name": "Java",
+    },
+    {
+      "count": 1,
+      "name": "C++",
+    },
+    {
+      "count": 1,
+      "name": "Typescript",
+    },
+  ],
+  "repos": [
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 1,
+      "language": "Javascript",
+      "name": "Teste Repo 1",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 2,
+      "language": "HTML",
+      "name": "Teste Repo 2",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 3,
+      "language": "Python",
+      "name": "Teste Repo 3",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 4,
+      "language": "Javascript",
+      "name": "Teste Repo 4",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 5,
+      "language": "Javascript",
+      "name": "Teste Repo 5",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 6,
+      "language": "HTML",
+      "name": "Teste Repo 6",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 7,
+      "language": "Ruby",
+      "name": "Teste Repo 7",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 8,
+      "language": "Java",
+      "name": "Teste Repo 8",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 9,
+      "language": "C++",
+      "name": "Teste Repo 9",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 10,
+      "language": "Typescript",
+      "name": "Teste Repo 10",
+    },
+  ],
+  "reposUrl": "https://api.github.com/users/testeuser/repos",
+}
+`;
+
+exports[`useReposStore > should filter repos 1`] = `
+{
+  "filterValue": "HTML",
+  "filteredRepos": [
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 2,
+      "language": "HTML",
+      "name": "Teste Repo 2",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 6,
+      "language": "HTML",
+      "name": "Teste Repo 6",
+    },
+  ],
+  "filteredReposCount": [
+    {
+      "count": 3,
+      "name": "Javascript",
+    },
+    {
+      "count": 2,
+      "name": "HTML",
+    },
+    {
+      "count": 1,
+      "name": "Python",
+    },
+    {
+      "count": 1,
+      "name": "Ruby",
+    },
+    {
+      "count": 1,
+      "name": "Java",
+    },
+    {
+      "count": 1,
+      "name": "C++",
+    },
+    {
+      "count": 1,
+      "name": "Typescript",
+    },
+  ],
+  "repos": [
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 1,
+      "language": "Javascript",
+      "name": "Teste Repo 1",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 2,
+      "language": "HTML",
+      "name": "Teste Repo 2",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 3,
+      "language": "Python",
+      "name": "Teste Repo 3",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 4,
+      "language": "Javascript",
+      "name": "Teste Repo 4",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 5,
+      "language": "Javascript",
+      "name": "Teste Repo 5",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 6,
+      "language": "HTML",
+      "name": "Teste Repo 6",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 7,
+      "language": "Ruby",
+      "name": "Teste Repo 7",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 8,
+      "language": "Java",
+      "name": "Teste Repo 8",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 9,
+      "language": "C++",
+      "name": "Teste Repo 9",
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "html_url": "https://github.com/testeuser/testerepo",
+      "id": 10,
+      "language": "Typescript",
+      "name": "Teste Repo 10",
+    },
+  ],
+  "reposUrl": "https://api.github.com/users/testeuser/repos",
+}
+`;

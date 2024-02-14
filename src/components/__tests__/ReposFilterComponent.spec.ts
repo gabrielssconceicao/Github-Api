@@ -57,4 +57,19 @@ describe('<ReposFilter', () => {
     await btns[2].trigger('click');
     expect(wrapper.element).toMatchSnapshot();
   });
+
+  it('should have the name No Language', () => {
+    const reposWithNull = [...repos];
+    reposWithNull[1].language = null;
+    const wrapper = mount(ReposFilter, {
+      props: {
+        filters: langSeparator(reposWithNull),
+      },
+    });
+
+    const btns = wrapper.findAll('button');
+
+    expect(btns[2].text()).toBe('No Language1');
+    expect(wrapper.element).toMatchSnapshot();
+  });
 });

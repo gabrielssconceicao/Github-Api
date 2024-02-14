@@ -1,1 +1,4 @@
-export type ILang = { name: string; count: number };
+export interface ILang {
+  name: string;
+  count: number;
+}

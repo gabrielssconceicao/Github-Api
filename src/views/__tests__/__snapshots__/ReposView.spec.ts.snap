@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ReposView /> > should match snapshot 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  <header
+    class="bg-header p-2 flex items-center text-white"
+    data-v-f09d8ef3=""
+  >
+    <routerlink
+      class="w-14 border-white border-2 p-1 flex justify-center items-center"
+      to="/"
+    >
+      Back 
+    </routerlink>
+    <p
+      class="flex-1 text-center"
+    >
+      <span
+        class="font-bold font-mono text-xl text-primary"
+      >
+        Teste User
+      </span>
+       Repos 
+    </p>
+  </header>
+  <section
+    class="h-[calc(100dvh-51.2px)] overflow-y-auto relative"
+    data-v-f09d8ef3=""
+    id="repos"
+  >
+    <section
+      class="flex flex-col items-center justify-center flex-1 gap-3 font-mono px-1 h-[inherit]"
+      data-v-f09d8ef3=""
+    >
+      <h2
+        class="text-xl md:text-3xl font-bold text-red-600 text-center"
+      >
+        This User has no Repositories 
+      </h2>
+    </section>
+  </section>
+  
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;

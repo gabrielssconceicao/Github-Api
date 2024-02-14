@@ -88,17 +88,6 @@ describe('<UserComponent />', () => {
     expect(userAvatar.attributes('alt')).toBe(`${userMock.login} avatar`);
   });
 
-  it('should not render router-link if user has 0 repos', () => {
-    const wrapper = mount(UserComponent, {
-      props: {
-        user: { ...userMock, public_repos: 0 },
-      },
-    });
-
-    const userReposLink = wrapper.find('[aria-label="user-repos-link"]');
-    expect(userReposLink.exists()).toBe(false);
-  });
-
   it('should match snapshot', () => {
     const wrapper = mount(UserComponent, {
       props: {

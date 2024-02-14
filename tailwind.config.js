@@ -14,6 +14,9 @@ export default {
       borderColor: {
         primary: '#2699f2',
       },
+      textColor: {
+        primary: '#2699f2',
+      },
     },
   },
   plugins: [],
