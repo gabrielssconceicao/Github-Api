@@ -24,7 +24,7 @@ const isSelected = (value: string) => {
     </button>
     <button v-for="lang in props.filters" :key="lang.name" :value="lang.name" @click="setFilter(lang.name)"
       :style="{ '--text-color': getLangColor(lang.name), '--bg-color': '#1f1f1f' }" :class="isSelected(lang.name)">
-      <span>{{ lang.name || 'No Language' }}</span>
+      <span>{{ lang.name }}</span>
       <span>{{ lang.count }}</span>
     </button>
   </div>

@@ -176,6 +176,7 @@ exports[`<ReposFilter > should have the name No Language 1`] = `
     class=""
     data-v-b209dafd=""
     style="--text-color: #ffffff; --bg-color: #1f1f1f;"
+    value="No Language"
   >
     <span
       data-v-b209dafd=""

@@ -7,7 +7,7 @@ export const langSeparator = (repos: IRepos[]): ILang[] => {
     const lang = repo.language;
     const index = langs.findIndex((l) => l.name === lang);
     if (index === -1) {
-      langs.push({ name: lang, count: 1 });
+      langs.push({ name: lang || 'No Language', count: 1 });
     } else {
       langs[index].count += 1;
     }
