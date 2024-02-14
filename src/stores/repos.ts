@@ -26,8 +26,12 @@ export const useReposStore = defineStore('repos', () => {
     useLoad.setLoading();
     try {
       const response = await fetch(reposUrl.value);
-      const data = await response.json();
-      setRepos(data);
+      const data: IRepos[] = await response.json();
+      const dataWithoutNull = data.map((e) => {
+        if (e.language) return e;
+        return { ...e, language: 'No Language' };
+      });
+      setRepos(dataWithoutNull);
     } catch (error) {
       setRepos([]);
     } finally {
