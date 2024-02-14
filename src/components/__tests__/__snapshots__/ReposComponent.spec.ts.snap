@@ -77,3 +77,45 @@ exports[`ReposComponent > should render correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`ReposComponent > should render p[aria-label="repo-language"] with No Language 1`] = `
+<div
+  data-v-7152ca0f=""
+  id="repo"
+  style="--lang-color: #ffffff;"
+>
+  <h3
+    class="text-center p-1 font-bold font-serif break-all"
+    data-v-7152ca0f=""
+  >
+    Teste Repo 1
+  </h3>
+  <p
+    aria-label="repo-description"
+    class="text-center font-mono text-base break-words mt-3 mb-2"
+    data-v-7152ca0f=""
+  >
+    lorem ipsum dolor sit amet
+  </p>
+  <div
+    class="flex justify-around p-2"
+    data-v-7152ca0f=""
+  >
+    <p
+      aria-label="repo-language"
+      class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+      data-v-7152ca0f=""
+    >
+      No Language
+    </p>
+    <a
+      class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+      data-v-7152ca0f=""
+      href="https://github.com/testeuser/testerepo"
+      target="_blank"
+    >
+      See Repo
+    </a>
+  </div>
+</div>
+`;

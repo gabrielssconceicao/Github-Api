@@ -1,0 +1,76 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ReposView /> > should match snapshot 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  <header
+    class="bg-header p-2 flex items-center text-white"
+    data-v-f09d8ef3=""
+  >
+    <routerlink
+      class="w-14 border-white border-2 p-1 flex justify-center items-center"
+      to="/"
+    >
+      Back 
+    </routerlink>
+    <p
+      class="flex-1 text-center"
+    >
+      <span
+        class="font-bold font-mono text-xl text-primary"
+      >
+        Teste User
+      </span>
+       Repos 
+    </p>
+  </header>
+  <section
+    class="h-[calc(100dvh-51.2px)] overflow-y-auto relative"
+    data-v-f09d8ef3=""
+    id="repos"
+  >
+    <div
+      class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section sticky top-0 z-10"
+      data-v-b209dafd=""
+      data-v-f09d8ef3=""
+    >
+      <button
+        class="clear"
+        data-v-b209dafd=""
+      >
+        <span
+          data-v-b209dafd=""
+        >
+          Clear
+        </span>
+      </button>
+      
+      
+    </div>
+    <div
+      class="max-w-7xl mx-auto overflow-y-auto py-8"
+      data-v-f09d8ef3=""
+    >
+      <transition-group-stub
+        appear="false"
+        class="grid gap-3 px-2 grid-cols-1 justify-items-stretch"
+        css="true"
+        data-v-f09d8ef3=""
+        id="repos-component"
+        name="fade"
+        persisted="false"
+        tag="div"
+      >
+        
+        
+      </transition-group-stub>
+    </div>
+  </section>
+  
+  <!--v-if-->
+  
+</div>
+`;

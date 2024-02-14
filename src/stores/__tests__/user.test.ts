@@ -7,8 +7,9 @@ describe('userStore', () => {
     expect(userStore.githubUser.status).toBe(undefined);
     expect(userStore.githubUser.user).toBe(undefined);
     expect(userStore.inputValue).toBe('');
-    const { githubUser, inputValue } = userStore;
-    expect({ githubUser, inputValue }).toMatchSnapshot();
+    expect(userStore.userName).toBe(undefined);
+    const { githubUser, inputValue, userName } = userStore;
+    expect({ githubUser, inputValue, userName }).toMatchSnapshot();
   });
 
   it('should set input value', () => {
@@ -17,8 +18,9 @@ describe('userStore', () => {
     expect(userStore.inputValue).toBe('teste');
     expect(userStore.githubUser.status).toBe(undefined);
     expect(userStore.githubUser.user).toBe(undefined);
-    const { githubUser, inputValue } = userStore;
-    expect({ githubUser, inputValue }).toMatchSnapshot();
+    expect(userStore.userName).toBe(undefined);
+    const { githubUser, inputValue, userName } = userStore;
+    expect({ githubUser, inputValue, userName }).toMatchSnapshot();
   });
 
   it('should search user ', async () => {
@@ -27,8 +29,9 @@ describe('userStore', () => {
     await userStore.searchUser();
     expect(userStore.githubUser.status).toBe(userResponseSuccess.status);
     expect(userStore.githubUser.user).toEqual(userResponseSuccess.user);
-    const { githubUser, inputValue } = userStore;
-    expect({ githubUser, inputValue }).toMatchSnapshot();
+    expect(userStore.userName).toBe('Teste User');
+    const { githubUser, inputValue, userName } = userStore;
+    expect({ githubUser, inputValue, userName }).toMatchSnapshot();
   });
 
   it('should search user error', async () => {

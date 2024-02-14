@@ -4,6 +4,7 @@ exports[`userStore > should init with an empty user 1`] = `
 {
   "githubUser": {},
   "inputValue": "",
+  "userName": undefined,
 }
 `;
 
@@ -25,6 +26,7 @@ exports[`userStore > should search user  1`] = `
     },
   },
   "inputValue": "resolveTest",
+  "userName": "Teste User",
 }
 `;
 
@@ -42,5 +44,6 @@ exports[`userStore > should set input value 1`] = `
 {
   "githubUser": {},
   "inputValue": "teste",
+  "userName": undefined,
 }
 `;

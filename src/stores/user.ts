@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import type { IUserResponse } from '@/types/user';
 import { fetchUser } from '@/hooks/fetchUser';
@@ -17,5 +17,9 @@ export const useUserStore = defineStore('user', () => {
     inputValue.value = value;
   }
 
-  return { githubUser, searchUser, setInputValue, inputValue };
+  const userName = computed(() => {
+    return githubUser.value.user?.name || githubUser.value.user?.login;
+  });
+
+  return { githubUser, searchUser, setInputValue, inputValue, userName };
 });
