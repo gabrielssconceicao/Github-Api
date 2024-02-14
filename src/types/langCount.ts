@@ -1,4 +1,4 @@
 export interface ILang {
-  name: string;
+  name: string | null;
   count: number;
 }
