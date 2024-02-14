@@ -3,7 +3,7 @@
 import ReposHeader from './ReposHeader.vue';
 import ReposFilter from './ReposFilterComponent.vue';
 import ReposComponent from './ReposComponent.vue';
-
+import RepoError from './RepoError.vue';
 import { useUserStore } from '@/stores/user'
 import { useReposStore } from '@/stores/repos'
 const useUser = useUserStore()
@@ -17,13 +17,19 @@ const useRepos = useReposStore()
 
   <section class="h-[calc(100dvh-51.2px)] overflow-y-auto  relative" id="repos">
 
-    <ReposFilter :filters="useRepos.filteredReposCount" @filter="useRepos.setFilter" class="sticky top-0 z-10" />
-    <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
-      <TransitionGroup name="fade" tag="div" class="grid gap-3 px-2  grid-cols-1 justify-items-stretch"
-        id="repos-component">
-        <ReposComponent v-for="repo in useRepos.filteredRepos" :key="repo.id" :repos="repo" />
-      </TransitionGroup>
+    <div v-if="useRepos.filteredRepos.length">
+      <ReposFilter :filters="useRepos.filteredReposCount" @filter="useRepos.setFilter" class="sticky top-0 z-10" />
+      <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
+        <TransitionGroup name="fade" tag="div" class="grid gap-3 px-2  grid-cols-1 justify-items-stretch"
+          id="repos-component">
+          <ReposComponent v-for="repo in useRepos.filteredRepos" :key="repo.id" :repos="repo" />
+        </TransitionGroup>
+      </div>
     </div>
+
+    <RepoError v-else />
+
+
   </section>
 </template>
 <style scoped>

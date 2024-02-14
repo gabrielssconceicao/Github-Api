@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<NotFoundView /> > should match snapshot 1`] = `
+<section
+  class="w-screen h-dvh flex flex-col gap-4 justify-center items-center"
+  data-v-071430af=""
+>
+  <h2
+    class="text-3xl md:text-5xl font-bold text-white"
+    data-v-071430af=""
+  >
+    Not Found
+  </h2>
+  <routerlink
+    class="text-white font-bold border-2 border-white p-2 text-base md:text-3xl"
+    data-v-071430af=""
+    to="/"
+  >
+    Go Back
+  </routerlink>
+</section>
+`;

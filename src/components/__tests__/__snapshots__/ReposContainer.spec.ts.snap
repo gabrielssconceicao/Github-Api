@@ -32,279 +32,283 @@ exports[`<RepositoriesContainer/> > should filter 1`] = `
     id="repos"
   >
     <div
-      class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section sticky top-0 z-10"
-      data-v-b209dafd=""
       data-v-f09d8ef3=""
     >
-      <button
-        class="clear"
+      <div
+        class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section sticky top-0 z-10"
         data-v-b209dafd=""
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Clear
-        </span>
-      </button>
-      
-      <button
-        class="selected"
-        data-v-b209dafd=""
-        style="--text-color: #ffffff; --bg-color: #1f1f1f;"
-        value="Javascript"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Javascript
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          3
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #e34c26; --bg-color: #1f1f1f;"
-        value="HTML"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          HTML
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          2
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #3572A5; --bg-color: #1f1f1f;"
-        value="Python"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Python
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #CC342D; --bg-color: #1f1f1f;"
-        value="Ruby"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Ruby
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #b07219; --bg-color: #1f1f1f;"
-        value="Java"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Java
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #f34b7d; --bg-color: #1f1f1f;"
-        value="C++"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          C++
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #ffffff; --bg-color: #1f1f1f;"
-        value="Typescript"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Typescript
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      
-    </div>
-    <div
-      class="max-w-7xl mx-auto overflow-y-auto py-8"
-      data-v-f09d8ef3=""
-    >
-      <transition-group-stub
-        appear="false"
-        class="grid gap-3 px-2 grid-cols-1 justify-items-stretch"
-        css="true"
         data-v-f09d8ef3=""
-        id="repos-component"
-        name="fade"
-        persisted="false"
-        tag="div"
       >
+        <button
+          class="clear"
+          data-v-b209dafd=""
+        >
+          <span
+            data-v-b209dafd=""
+          >
+            Clear
+          </span>
+        </button>
         
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+        <button
+          class="selected"
+          data-v-b209dafd=""
+          style="--text-color: #ffffff; --bg-color: #1f1f1f;"
+          value="Javascript"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 1
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Javascript
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+            3
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #e34c26; --bg-color: #1f1f1f;"
+          value="HTML"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 4
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            HTML
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+            2
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #3572A5; --bg-color: #1f1f1f;"
+          value="Python"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 5
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Python
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #CC342D; --bg-color: #1f1f1f;"
+          value="Ruby"
+        >
+          <span
+            data-v-b209dafd=""
           >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
+            Ruby
+          </span>
+          <span
+            data-v-b209dafd=""
+          >
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #b07219; --bg-color: #1f1f1f;"
+          value="Java"
+        >
+          <span
+            data-v-b209dafd=""
+          >
+            Java
+          </span>
+          <span
+            data-v-b209dafd=""
+          >
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #f34b7d; --bg-color: #1f1f1f;"
+          value="C++"
+        >
+          <span
+            data-v-b209dafd=""
+          >
+            C++
+          </span>
+          <span
+            data-v-b209dafd=""
+          >
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #ffffff; --bg-color: #1f1f1f;"
+          value="Typescript"
+        >
+          <span
+            data-v-b209dafd=""
+          >
+            Typescript
+          </span>
+          <span
+            data-v-b209dafd=""
+          >
+            1
+          </span>
+        </button>
         
-      </transition-group-stub>
+      </div>
+      <div
+        class="max-w-7xl mx-auto overflow-y-auto py-8"
+        data-v-f09d8ef3=""
+      >
+        <transition-group-stub
+          appear="false"
+          class="grid gap-3 px-2 grid-cols-1 justify-items-stretch"
+          css="true"
+          data-v-f09d8ef3=""
+          id="repos-component"
+          name="fade"
+          persisted="false"
+          tag="div"
+        >
+          
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 1
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 4
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 5
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          
+        </transition-group-stub>
+      </div>
     </div>
   </section>
   
@@ -343,559 +347,563 @@ exports[`<RepositoriesContainer/> > should render with the correct data 1`] = `
     id="repos"
   >
     <div
-      class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section sticky top-0 z-10"
-      data-v-b209dafd=""
       data-v-f09d8ef3=""
     >
-      <button
-        class="clear"
+      <div
+        class="w-full grid grid-cols-3 gap-2 p-1 sm:grid-cols-5 md:flex md:flex-wrap md:justify-around md:gap-2 bg-section sticky top-0 z-10"
         data-v-b209dafd=""
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Clear
-        </span>
-      </button>
-      
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #ffffff; --bg-color: #1f1f1f;"
-        value="Javascript"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Javascript
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          3
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #e34c26; --bg-color: #1f1f1f;"
-        value="HTML"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          HTML
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          2
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #3572A5; --bg-color: #1f1f1f;"
-        value="Python"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Python
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #CC342D; --bg-color: #1f1f1f;"
-        value="Ruby"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Ruby
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #b07219; --bg-color: #1f1f1f;"
-        value="Java"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Java
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #f34b7d; --bg-color: #1f1f1f;"
-        value="C++"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          C++
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      <button
-        class=""
-        data-v-b209dafd=""
-        style="--text-color: #ffffff; --bg-color: #1f1f1f;"
-        value="Typescript"
-      >
-        <span
-          data-v-b209dafd=""
-        >
-          Typescript
-        </span>
-        <span
-          data-v-b209dafd=""
-        >
-          1
-        </span>
-      </button>
-      
-    </div>
-    <div
-      class="max-w-7xl mx-auto overflow-y-auto py-8"
-      data-v-f09d8ef3=""
-    >
-      <transition-group-stub
-        appear="false"
-        class="grid gap-3 px-2 grid-cols-1 justify-items-stretch"
-        css="true"
         data-v-f09d8ef3=""
-        id="repos-component"
-        name="fade"
-        persisted="false"
-        tag="div"
       >
+        <button
+          class="clear"
+          data-v-b209dafd=""
+        >
+          <span
+            data-v-b209dafd=""
+          >
+            Clear
+          </span>
+        </button>
         
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #ffffff; --bg-color: #1f1f1f;"
+          value="Javascript"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 1
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Javascript
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #e34c26;"
+            3
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #e34c26; --bg-color: #1f1f1f;"
+          value="HTML"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 2
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            HTML
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              HTML
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #3572A5;"
+            2
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #3572A5; --bg-color: #1f1f1f;"
+          value="Python"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 3
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Python
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Python
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #CC342D; --bg-color: #1f1f1f;"
+          value="Ruby"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 4
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Ruby
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #b07219; --bg-color: #1f1f1f;"
+          value="Java"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 5
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Java
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Javascript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #e34c26;"
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #f34b7d; --bg-color: #1f1f1f;"
+          value="C++"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 6
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            C++
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              HTML
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #CC342D;"
+            1
+          </span>
+        </button>
+        <button
+          class=""
+          data-v-b209dafd=""
+          style="--text-color: #ffffff; --bg-color: #1f1f1f;"
+          value="Typescript"
         >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
+          <span
+            data-v-b209dafd=""
           >
-            Teste Repo 7
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
+            Typescript
+          </span>
+          <span
+            data-v-b209dafd=""
           >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Ruby
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #b07219;"
-        >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
-          >
-            Teste Repo 8
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
-          >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Java
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #f34b7d;"
-        >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
-          >
-            Teste Repo 9
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
-          >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              C++
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
-        <div
-          data-v-7152ca0f=""
-          data-v-f09d8ef3=""
-          id="repo"
-          style="--lang-color: #ffffff;"
-        >
-          <h3
-            class="text-center p-1 font-bold font-serif break-all"
-            data-v-7152ca0f=""
-          >
-            Teste Repo 10
-          </h3>
-          <p
-            aria-label="repo-description"
-            class="text-center font-mono text-base break-words mt-3 mb-2"
-            data-v-7152ca0f=""
-          >
-            lorem ipsum dolor sit amet
-          </p>
-          <div
-            class="flex justify-around p-2"
-            data-v-7152ca0f=""
-          >
-            <p
-              aria-label="repo-language"
-              class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-            >
-              Typescript
-            </p>
-            <a
-              class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
-              data-v-7152ca0f=""
-              href="https://github.com/testeuser/testerepo"
-              target="_blank"
-            >
-              See Repo
-            </a>
-          </div>
-        </div>
+            1
+          </span>
+        </button>
         
-      </transition-group-stub>
+      </div>
+      <div
+        class="max-w-7xl mx-auto overflow-y-auto py-8"
+        data-v-f09d8ef3=""
+      >
+        <transition-group-stub
+          appear="false"
+          class="grid gap-3 px-2 grid-cols-1 justify-items-stretch"
+          css="true"
+          data-v-f09d8ef3=""
+          id="repos-component"
+          name="fade"
+          persisted="false"
+          tag="div"
+        >
+          
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 1
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #e34c26;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 2
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                HTML
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #3572A5;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 3
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Python
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 4
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 5
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Javascript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #e34c26;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 6
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                HTML
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #CC342D;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 7
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Ruby
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #b07219;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 8
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Java
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #f34b7d;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 9
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                C++
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          <div
+            data-v-7152ca0f=""
+            data-v-f09d8ef3=""
+            id="repo"
+            style="--lang-color: #ffffff;"
+          >
+            <h3
+              class="text-center p-1 font-bold font-serif break-all"
+              data-v-7152ca0f=""
+            >
+              Teste Repo 10
+            </h3>
+            <p
+              aria-label="repo-description"
+              class="text-center font-mono text-base break-words mt-3 mb-2"
+              data-v-7152ca0f=""
+            >
+              lorem ipsum dolor sit amet
+            </p>
+            <div
+              class="flex justify-around p-2"
+              data-v-7152ca0f=""
+            >
+              <p
+                aria-label="repo-language"
+                class="px-2 py-1 font-sans border-2 border-[var(--lang-color)] text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+              >
+                Typescript
+              </p>
+              <a
+                class="border-white border-2 px-2 py-1 text-white transition-colors hover:border-[var(--lang-color)] hover:text-[var(--lang-color)]"
+                data-v-7152ca0f=""
+                href="https://github.com/testeuser/testerepo"
+                target="_blank"
+              >
+                See Repo
+              </a>
+            </div>
+          </div>
+          
+        </transition-group-stub>
+      </div>
     </div>
   </section>
   

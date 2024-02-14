@@ -139,7 +139,7 @@ exports[`<UserContainer /> > should show UserComponent when there is a successfu
       aria-label="user-repos-link"
       class="bg-primary p-2 w-full text-center text-white hover:bg-primary-contrast font-mono rounded-md"
       data-v-7af04be9=""
-      to="/repos"
+      to="/testeuser/repos"
     >
        View Repositories 
     </routerlink>
