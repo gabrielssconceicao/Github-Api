@@ -4,9 +4,12 @@ A Github api made using Vue + Typescript
 
 This project consists of an application that uses the Github's public API to perform queries and display information about users and their repositories. Through this application, users can explore GitHub data efficiently and interactively.
 
-## 🔗 Link
+<h1 style="text-align: center;"><a href="https://github-api-sable-nu.vercel.app/"  target="_blank" >See App</a></h1>
+## 📷 Images
 
-<a href="https://github-api-sable-nu.vercel.app/"  target="_blank" >See App</a></h1>
+![Home Page](./screenshot/home.png)
+
+<img src="./screenshot/reposPage.gif" width=500 alt="Repos Page"/>
 
 ## 🚀 Functionalities
 
@@ -42,8 +45,8 @@ This project consists of an application that uses the Github's public API to per
 
 ## Autor
 
-This project was developed by <a href="https://github.com/gabrielssconceicao" target="_blank">Gabriel</a>
+This project was developed by <a href="https://github.com/gabrielssconceicao" target="_blank">Gabriel Conceição</a>
 
 ## 📝 Licença
 
-This project is licensed under the
+This project is licensed under the [MIT License](./LICENSE).
