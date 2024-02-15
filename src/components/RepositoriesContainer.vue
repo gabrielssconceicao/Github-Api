@@ -20,9 +20,10 @@ const useRepos = useReposStore()
     <div v-if="useRepos.filteredRepos.length">
       <ReposFilter :filters="useRepos.filteredReposCount" @filter="useRepos.setFilter" class="sticky top-0 z-10" />
       <div class="max-w-7xl mx-auto overflow-y-auto py-8 ">
-        <TransitionGroup name="fade" tag="div" class="grid gap-3 px-2  grid-cols-1 justify-items-stretch"
+        <TransitionGroup name="fade" tag="div" class="flex flex-wrap flex-row gap-3 justify-center items-stretch"
           id="repos-component">
-          <ReposComponent v-for="repo in useRepos.filteredRepos" :key="repo.id" :repos="repo" />
+          <!-- grid gap-3 px-2  grid-cols-1 justify-items-stretch -->
+          <ReposComponent v-for="repo in useRepos.filteredRepos" :key="repo.id" :repos="repo" class="flex-1" />
         </TransitionGroup>
       </div>
     </div>
@@ -33,13 +34,6 @@ const useRepos = useReposStore()
   </section>
 </template>
 <style scoped>
-#repos-component {
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-  align-items: stretch;
-
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease-in-out;

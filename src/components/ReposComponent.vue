@@ -22,6 +22,6 @@ const props = defineProps<{ repos: IRepos }>()
 </template>
 <style scoped>
 #repo {
-  @apply bg-header text-white p-3 relative max-w-[300px] rounded-xl shadow-md flex flex-col justify-between before:w-2 before:absolute before:bg-[var(--lang-color)] before:top-0 before:left-0 before:bottom-0 before:rounded-tl-xl before:rounded-bl-xl md:text-xl md:w-[500px]
+  @apply bg-header text-white p-3 relative max-w-[300px] min-w-[250px] rounded-xl shadow-md flex flex-col justify-between before:w-2 before:absolute before:bg-[var(--lang-color)] before:top-0 before:left-0 before:bottom-0 before:rounded-tl-xl before:rounded-bl-xl md:text-xl md:w-[500px]
 }
 </style>
